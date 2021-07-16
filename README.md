@@ -14,3 +14,13 @@ We have come up with an amalgamation of services dedicated to women health in th
 Our vision is to unite women together and give them a safe, cosy place to learn, discuss, make friends and heal themselves. 
 
 As we all know, even in today’s technology-driven world, women are uncomfortable using it.So, our website has a very simple, yet appealing UI with all the assistant you will need kept at one single place
+
+ ## Tech Stack
+ 1. Python
+ 2. PyTorch
+ 3. Flask
+ 4. HTML
+ 5. CSS
+ 6. JavaScript
+ 7. Socket
+ 8. Node
