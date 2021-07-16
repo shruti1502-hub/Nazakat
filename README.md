@@ -1,5 +1,5 @@
 # Nazakat
-# You care for them, We care for you.
+You care for them, We care for you.
 
 Our Vision
 A woman is a full circle, within her is the power to create,nurture and transform. 
