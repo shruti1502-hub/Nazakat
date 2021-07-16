@@ -24,3 +24,38 @@ As we all know, even in today’s technology-driven world, women are uncomfortab
  6. JavaScript
  7. Socket
  8. Node
+
+## Website Overview
+<h2 align= "left"><b>Let's Have a Look at Website 🔥</b></h2>
+
+<p align="left">
+
+## Home Page  
+<img width=40% src="screenshots/homepg1.jpeg"> &ensp;  
+<img width=40% src="screenshots/homepg2.jpeg"> &ensp;  
+<img width=40% src="screenshots/homepg3.jpeg"> &ensp; 
+<img width=40% src="screenshots/homepg4.jpeg"> &ensp;
+<img width=40% src="screenshots/homepg5.jpeg"> &ensp; 
+<img width=40% src="screenshots/homepg6.jpeg"> &ensp;  
+<img width=40% src="screenshots/homepg7.jpeg"> &ensp;  
+<img width=40% src="screenshots/homepg8.jpeg"> &ensp;  
+<img width=40% src="screenshots/homepg9.jpeg"> &ensp;  
+ 
+ 
+## Baby Tracker 
+<img width=40% src="screenshots/pregt1.jpeg"> &ensp;
+<img width=40% src="screenshots/pregt2.jpeg"> &ensp;  
+
+## Period Tracker  
+<img width=40% src="screenshots/periodtracker.jpeg"> &ensp;  
+
+## SheBot  
+<img width=40% src="screenshots/shebot1.jpeg"> &ensp; 
+<img width=40% src="screenshots/shebot2.jpeg"> &ensp;  
+
+
+##Alan API 
+<img width=40% src="screenshots/alan.jpeg"> &ensp;  
+
+ ##Cancer Diagnosis
+<img width=40% src="screenshots/cancerdiagnosis.jpeg"> &ensp;  
