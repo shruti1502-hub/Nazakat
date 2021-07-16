@@ -1,7 +1,8 @@
 # Nazakat
-You care for them, We care for you.
+## You care for them, We care for you.
 
-Our Vision
+## Our Vision
+
 A woman is a full circle, within her is the power to create,nurture and transform. 
 
 Having said that, it is very common to see them care a river for others and not spend even a drop of it on themselves. The kind of ignorance we see in women regarding their health is absolutely frightening as the ignorance continues until the very end in most cases. 
