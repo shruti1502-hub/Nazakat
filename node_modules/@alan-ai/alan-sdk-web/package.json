@@ -1,0 +1,66 @@
+{
+  "_from": "@alan-ai/alan-sdk-web",
+  "_id": "@alan-ai/alan-sdk-web@1.8.27",
+  "_inBundle": false,
+  "_integrity": "sha512-eF2UPjGgyj3BjnDBDvRCI2oly97N+n0sikJYcf7rCKmSZenML2c8eoWMX9+4fhbOS0bP+HoKVXXNRxXY5WH1bg==",
+  "_location": "/@alan-ai/alan-sdk-web",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@alan-ai/alan-sdk-web",
+    "name": "@alan-ai/alan-sdk-web",
+    "escapedName": "@alan-ai%2falan-sdk-web",
+    "scope": "@alan-ai",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@alan-ai/alan-sdk-web/-/alan-sdk-web-1.8.27.tgz",
+  "_shasum": "1e6b16e125015f6e9ed3b77a950f976150825953",
+  "_spec": "@alan-ai/alan-sdk-web",
+  "_where": "C:\\Users\\Shruti\\Desktop\\hif",
+  "bugs": {
+    "url": "https://github.com/alan-ai/alan-sdk-web/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Alan Web SDK: a lightweight JavaScript library for adding a voice experience to your website or web application",
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/alan-ai/alan-sdk-web#readme",
+  "keywords": [
+    "alan sdk web",
+    "voice ai",
+    "conversational ai",
+    "chatbot",
+    "voice",
+    "ai",
+    "conversational",
+    "nlp",
+    "natural language",
+    "dialogs",
+    "dialog flow",
+    "enterprise ai",
+    "voice assistant",
+    "voice development",
+    "add voice to your app",
+    "voice interface",
+    "alan voice",
+    "alan ai"
+  ],
+  "license": "MIT",
+  "main": "dist/alan_lib.js",
+  "name": "@alan-ai/alan-sdk-web",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alan-ai/alan-sdk-web.git"
+  },
+  "types": "dist/alan_lib.d.ts",
+  "version": "1.8.27"
+}

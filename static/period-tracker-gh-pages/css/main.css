@@ -1,0 +1,630 @@
+:root {
+  --c-main-text: #333;
+  --c-main-bg: #EEE;
+  --c-theme-first: #09F;
+  --c-theme-second: #00FFC4;
+  --c-secondary-text: #808080;
+  --c-secondary-bg: #CCC;
+  --border-radius: 3px;
+  --height-top: 2.5rem;
+  --height-bottom: 2.8rem;
+  --gap: .5rem;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+  font-family: 'Cookie', cursive;
+  font-weight:400;
+}
+body {
+  font-family: 'Cookie', cursive;
+  font-weight:400;
+  /* background-color: powderblue; */
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png') center no-repeat;
+  line-height: 1.4;
+  margin: 0;
+}
+body, input, button {
+  color: var(--c-main-text);
+  font-family: Arial, sans-serif;
+}
+a {
+  color: var(--c-theme-first);
+  text-decoration: none;
+}
+label, button, input[type=button], input[type=submit], input[type=reset] {
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.icon {
+  display: block;
+  fill: currentColor;
+  height: var(--size);
+  margin: 0 auto;
+  width: var(--size);
+}
+
+/*=== header */
+.main-header {
+  align-items: center;
+  background:rgb(163, 38, 163);
+  font-family: 'Playball', cursive;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.main-header__title {
+  font-family: 'Playball', cursive;
+  font-size: 1em;
+  height: inherit;
+  margin: 0;
+}
+.main-header__title__icon {
+  --size: 100%;
+  display: inline;
+  vertical-align: middle;
+  width: auto;
+}
+.main-header__status {
+  display: flex;
+}
+.main-header__status__icon {
+  --size: 0.8em;
+  display: none;
+  margin: 0 1px;
+}
+.main-header__status__icon--active {
+  display: block;
+}
+
+/*=== sections */
+.main-section {
+  display: none;
+}
+.main-section--selected {
+  display: block;
+}
+
+/*=== grid */
+.main-header {
+  height: var(--height-top);
+}
+.main-nav {
+  height: var(--height-bottom);
+}
+.main-content {
+  padding-bottom: var(--height-bottom);
+  padding-top: var(--height-top);
+  background-color:rgba(238, 168, 207, 0.912);
+}
+.main-header,
+.main-section--home,
+.main-section--settings,
+.log-average {
+  font-family: 'Playball', cursive;
+  padding-left: var(--gap);
+  padding-right: var(--gap);
+}
+.main-section--home
+{
+  height:100%;
+}
+#home-calc
+{ 
+  
+  padding: 240px 0 250px 0;
+  background-image:linear-gradient(to top right,rgba(155, 90, 90, 0.2),rgba(255,255,255,0.5)), url('https://hips.hearstapps.com/elleuk.cdnds.net/18/05/4000x2000/landscape-1517497084-periodproducts.jpg?resize=980:*');
+  background-size: cover;
+  line-height: 2rem;
+  color: purple;
+  font-size: 1.8rem;
+  background-size: cover;
+  background-position: center;
+}
+#home
+{
+ 
+
+
+}
+#home img{
+  width:100px;
+  height: 700px;
+  width:400px;
+  margin-left: 50px;
+  position: absolute;
+  top:100px;
+  right:0px;
+ 
+}
+
+.home__wrapper,
+.main-section--settings,
+.log-average {
+  padding-top: var(--gap);
+}
+
+/*=== input number with plus & minus buttons */
+.input-number input[type=number]::-webkit-inner-spin-button, 
+.input-number input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-number input[type=number] {
+  -moz-appearance: textfield;
+}
+.input-number {
+  border: 1px solid var(--c-main-text);
+  border-radius: var(--border-radius);
+  display: flex;
+  height: 2em;
+}
+.input-number__input {
+  border-color: var(--c-main-text);
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0 1px;
+  font-size: inherit;
+  margin: 0;
+  padding-top: .3em;
+  text-align: center;
+  width: 3em;
+}
+.input-number__button {
+  background: purple;
+  border: 0 none;
+  border-radius: 0;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 2em;
+}
+.input-number__icon {
+  --size: 0.667em;
+  color: #fff;
+}
+
+/*=== input checkbox with svg icons */
+.input-checkbox__icon {
+  --size: 1em;
+  margin: 0;
+}
+.input-checkbox__check {
+  display: none;
+}
+.input-checkbox__icon__checked {
+  display: none;
+}
+.input-checkbox__check:checked + .input-checkbox__label .input-checkbox__icon__checked {
+  display: block;
+}
+
+/*=== add form */
+.add-form input[type=date]::-webkit-inner-spin-button {
+  display: none;
+}
+.new-start
+{
+  /* padding: 240px 0 250px 0; */
+  background-image:linear-gradient(to top right,rgba(155, 90, 90, 0.2),rgba(255,255,255,0.5)), url('https://static.onecms.io/wp-content/uploads/sites/38/2017/06/12224904/gettyimages-626811514.jpg');
+  background-size: cover;
+}
+
+.add-form {
+  background-image:linear-gradient(to top right,rgba(155, 90, 90, 0.2),rgba(255,255,255,0.5)), url('https://static.onecms.io/wp-content/uploads/sites/38/2017/06/12224904/gettyimages-626811514.jpg');
+  background-size: cover;
+  display: none;
+}
+.add-form--selected {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.add-form__date {
+  position:absolute;
+  top:450px;
+  left:00px;
+  background: rgba(245, 229, 244, 0.613);
+  border: 1px solid var(--c-main-text);
+  border-radius: var(--border-radius);
+  font-size: inherit;
+  margin: 2% 55% 5% 600px;
+  padding: 5px;
+  display: block;
+  text-align: center;
+  width: 25%;
+}
+.cancel-button
+{
+position: absolute;
+top:550px;
+left:600px;
+
+
+}
+.save-button
+{
+position: absolute;
+top:550px;
+left:830px;
+
+}
+.add-form__button {
+  /* position: absolute; */
+  /* background: var(--c-secondary-bg); */
+  border: 1px solid var(--c-main-text);
+  border-radius: var(--border-radius);
+  font-size: inherit;
+  /* margin: 0 0 var(--gap); */
+  padding: 25px;
+  width: 150px;
+  background-color: #F575C0;
+}
+
+
+/*=== nav */
+.main-nav {
+  background:purple;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.main-nav__list {
+  align-items: stretch;
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+.main-nav__item {
+  flex: 1;
+  height: 100%;
+  list-style: none;
+}
+.main-nav__link {
+  color:#fff;
+  display: block;
+  font-size: .8em;
+  height: 100%;
+  padding-top: 0.5em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+.main-nav__link:hover, .main-nav__link:focus {
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 1);
+}
+.main-nav__link--selected {
+  background:rgb(247, 209, 213);
+  color:rgb(163, 38, 163);
+  text-shadow: none;
+}
+.main-nav__icon {
+  --size: 1.25em;
+  margin-bottom: .25em;
+  stroke: rgba(0, 0, 0, .2);
+}
+
+/*=== home */
+.home__wrapper {
+  text-align: center;
+}
+#home
+{
+  background-image: url('https://mylargebox.com/wp-content/uploads/2020/06/Sanitary-pads-tampons-and-menstrual-cups-which-is-better-780x600.jpg') center no-repeat;
+ 
+  background-color: #F5B9DC;
+}
+.home__calc {
+  font-family: 'Playball', cursive;
+  font-size: .9em;
+  margin-bottom: calc(var(--gap) * 2);
+}
+.home__calc--invisible {
+  visibility: hidden;
+}
+.home__next,
+.home__countdown,
+.home__counter {
+  font-size: 1.33em;
+  font-weight: bold;
+}
+.home__countdown,
+.home__counter {
+  font-size: 1.67em;
+}
+.home__add {
+  position: absolute;
+  top:320px;
+  left: 600px;
+  background:#A70A66;
+  font-family: 'Playball', cursive;
+  border: 2px solid #fff;
+  border-radius: 5%;
+  color: #fff;
+  display: block;
+  font-size: 2rem;
+  /* font-weight: bold; */
+  margin: 0 auto;
+  padding: 25px;
+  width: 25%;
+}
+.add-form img{
+  position: absolute;
+  top:50px;
+  left:1000px;
+}
+.home_add--hide {
+  display: none;
+}
+.home__add__tap {
+  display: block;
+  font-size: .6em;
+ 
+}
+
+/*=== calendar */
+.calendar {
+  background-color:#F5CBE3;
+ 
+  font-family: 'Playball', cursive;
+  margin-top: 100px;
+  margin-bottom:100px;
+  background: purple;
+  border-spacing: 1px;
+  text-align: center;
+  width: 100%;
+}
+.calendar__nav {
+  color: #fff;
+  display: block;
+}
+.calendar__nav:hover, .calendar__nav:focus {
+  color: var(--c-theme-second);
+  color: #fff;
+}
+.calendar__nav__icon {
+  --size: 2em;
+  color: #fff;
+}
+.calendar__weekday {
+  color: #fff;
+  font-size: .7em;
+  font-weight: normal;
+}
+.calendar__day {
+  background: rgb(243, 220, 224);
+  font-size: .9em;
+  /* border-radius: 25%; */
+  font-weight: bold;
+  padding: 1.0em .3em .6em;
+  position: relative;
+  width: 14.3%; /* 100 / 7 */
+}
+.calendar__day:before {
+  color: pink;
+  content: attr(data-counter);
+  font-size: .7em;
+  font-weight: normal;
+  left: 2px;
+  position: absolute;
+  top: 0;
+}
+.calendar__day--another-month {
+  color:rgb(159, 33, 243);
+  font-weight: normal;
+}
+.calendar__day--another-month:after {
+  background: (210, 250, 89);
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.calendar--extended .calendar__day--another-month:after {
+  display: none;
+}
+.calendar__day--today {
+  box-shadow: inset 0px 0px 0px 5px var(--c-theme-first);
+}
+.calendar__day--selected {
+  background: pink;
+}
+.calendar__day--selected.calendar__day--future {
+  background: pink;
+  background-image: linear-gradient(45deg, transparent 50%, pink 0);
+}
+.calender th{
+  color:#fff;
+}
+
+/*=== log */
+#log
+{
+  background:url('https://static-bebeautiful-in.unileverservices.com/menstural_tools_for_working_women_2.jpg') center no-repeat;
+   background-size: cover;
+}
+.log-list {
+  border-collapse: collapse;
+  width: 100%;
+}
+.log-list__item--selected {
+  background: #F00;
+}
+.log-list__info {
+  border-bottom: 1px solid var(--c-secondary-bg);
+  padding: .6em .5em .5em;
+}
+.log-list__info--interval {
+  padding-right: 1em;
+  text-align: right;
+  width: 2em;
+}
+.log-list__info--edit,
+.log-list__info--remove {
+  padding: 0;
+  width: 2.5em;
+}
+.log-list__info--edit {
+  display: none; 
+}
+.log-list__button {
+  background: transparent;
+  border: 0 none;
+  color: var(--c-secondary-text);
+  display: block;
+  font-size: inherit;
+  width: 100%;
+}
+.log-list__button__icon {
+  --size: 1em;
+}
+.log__add
+{
+  border-radius: 25px;
+  color: purple;
+  margin-left: 25px;
+  background-color: rgb(206, 155, 243);
+  padding: 15px 10px;
+}
+.log-average {
+
+  padding: 200px 0  250px 0;
+  font-size: .8em;
+  margin-bottom: calc(var(--gap) * 2);
+  padding-bottom: calc(var(--gap) * 2);
+  text-align: center;
+}
+.log-average__counter {
+  display: block;
+  color: purple;
+
+  font-size: 3rem;
+  line-height: 1;
+  padding-bottom: .1em;
+}
+.log-average p{
+  font-size: 3rem;
+}
+#log-data
+{
+  font-family: 'Cookie', cursive;
+  font-size: 1.5rem;
+  margin-left: 25px;
+}
+/*=== settings */
+.settings .one{
+  width:400px;
+  height:300px;
+  position: absolute;
+  top:75px;
+  right:25px;
+}
+.settings .two{
+  width:400px;
+  height:300px;
+  position: absolute;
+  top:75px;
+  left:25px;
+}
+.main-section--settings{
+  background:url('https://wallpapercave.com/wp/wp3820235.png') center no-repeat;
+  padding-top: 100px;
+}
+.settings__option {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 35%;
+  padding: .5em 0 .5em 1px;
+  text-align: left;
+  width: 25%;
+}
+.settings__button {
+  background: #fff;
+  margin-bottom: 10px;
+  border: 2px solid rgb(231, 59, 145);
+ font-style: italic;
+ font-family: 'Cookie', cursive;
+  font-size: inherit;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.settings__info {
+  border-top: 1px solid purple;
+  margin: 2em 0 0;
+  padding: 1em 0 0;
+}
+
+/*=== alert */
+.alerts-wrapper {
+  bottom: var(--height-bottom);
+  left: var(--gap);
+  position: fixed;
+  width: calc(100% - var(--gap) * 2);
+}
+.alert {
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+  padding: .25em .5em;
+  width: 100%;
+  background: var(--c-bg);
+  color: var(--c-fg);
+}
+.alert__close {
+  background:#fff;
+  border: 0 none;
+  border-radius: 100%;
+  color: inherit;
+  font-size: inherit;
+  height: 2em;
+  margin-left: var(--gap);
+  padding: 0;
+}
+.alert__close__icon {
+  --size: 2em;
+}
+.alert .alert__close:hover,
+.alert .alert__close:focus,
+.alert .alert__close:active {
+  background: var(--c-fg);
+  box-shadow: 0px 0px 0px 2px var(--c-fg);
+  color: var(--c-bg);
+}
+.alert--info {
+  --c-bg: #d9edf7;
+  --c-fg: #31708f;
+}
+.alert--error {
+  --c-bg: #f2dede;
+  --c-fg: #a94442;
+}
+.alert--success {
+  --c-bg: #dff0d8;
+  --c-fg: #3c763d;
+}
+.alert--warning {
+  --c-bg: #fcf8e3;
+  --c-fg: #8a6d3b;
+}

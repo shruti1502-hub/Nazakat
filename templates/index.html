@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Nazakat</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/logo.png" rel="icon">
+  <link href="static/assets/img/logo.PNG" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Great+Vibes&family=Parisienne&family=Playball&display=swap" rel="stylesheet">
+<!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  
+  <!-- <link href="static/assets/css/style2.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <link href="static/assets/css/style.css" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: Ninestars - v4.3.0
+  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"> <span> <img src="static/assets/img/logo2.png" ></span></a></h1>
+
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="static/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+      <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#home" style="font-size: 22px;">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about" style="font-size: 22px;">Highlights</a></li>
+          <li><a class="nav-link scrollto" href="#disorder" style="font-size: 22px;">Disorders</a></li>
+          <li><a class="nav-link scrollto" href="#faq" style="font-size: 22px;">FAQs</a></li>
+          <li><a class="nav-link scrollto" href="#team" style="font-size: 22px;">Team</a></li>
+         
+          <li class="dropdown"><a href="#community" style="font-size: 22px;"><span>Communities</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{{ url_for('teenage') }}" style="font-size: 25px;">Teenage</a></li>
+              <li><a href="{{ url_for('married') }}" style="font-size: 25px;">Married</a></li>
+              <li><a href="{{ url_for('infertility') }}" style="font-size: 25px;">Infertility</a></li>
+              <li><a href="{{ url_for('pregnant') }}" style="font-size: 25px;">Pregnant</a></li>
+              <li><a href="{{ url_for('new_moms') }}" style="font-size: 25px;">New Moms</a></li>
+              <li><a href="{{ url_for('menopause') }}" style="font-size: 25px;">Menopause</a></li>
+              
+            </ul>
+          </li>
+           <li><a class="nav-link scrollto" href="#contact" style="font-size: 22px;">Contact Us</a></li>
+          <li><a class="getstarted scrollto" target="_blank" href="static/period-tracker-gh-pages/index.html" style="font-size: 20px;">Period Tracker</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <!--w3l-banner-slider-main-->
+<section class="w3l-banner-slider-main" id="home">
+	<div class="top-header-content">
+		
+		<div class="bannerhny-content">
+
+			
+ 
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1460904577954-8fadb262612c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2140&q=80" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1583397758734-a524369cd4eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://amritammu.com/wp-content/uploads/2020/04/Newborn-Baby-Photoshoot-Amrit-Ammu-Photography-90.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://2.bp.blogspot.com/-oaLmnipkEmY/WgUz5lurrFI/AAAAAAAASQo/9R6u83kMvU0CYi0iKVbUdLHLOpHVuezfACLcBGAs/s1600/fullsizeoutput_141f.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1593355660385-43a0471c6077?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1592&q=80" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div>
+   
+       
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+            <img  src="https://images.unsplash.com/photo-1522219406764-db207f1f7640?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" class="img-fluid" alt="" data-aos="zoom-in">
+          </div>
+          <div class="col-lg-6 pt-5 pt-lg-0">
+            <h3 data-aos="fade-up" class="high">Your Daily Dose of Info</h3>
+            <p data-aos="fade-up" data-aos-delay="100" style="font-size: 30px;">
+              Browse the links and explore amazing blogs and videos by the best doctors online </p>
+            <div class="row">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                
+                <h4>
+                  <a href="https://www.youtube.com/watch?v=vQD2B1VZ14c">5 Things Your Gynecologist Wants</a> </h4>
+                <!-- <p><a href="#">https://www.youtube.com/watch?v=vQD2B1VZ14c</a> </p> -->
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+               
+                <h4><a href="https://www.brides.com/story/sex-problems-for-newlyweds"> Problems Newlyweds Face</a></h4>
+              
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+               
+                <h4> <a href="https://www.youtube.com/watch?v=vQD2B1VZ14c">Top 5 Discharge Questions</a></h4>
+                
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+               
+                <h4><a href="https://surrogate.com/intended-parents/overcoming-infertility/10-ways-of-coping-with-infertility/c">10 Ways of coping with Infertility</a> </h4>
+                <p></p>
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+               
+                <h4><a href="https://www.youtube.com/watch?v=MB1rb_C544U">Get Your Answers From A Gynaecologist</a></h4>
+                
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+               
+                <h4><a href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/the-growing-child-adolescent-13-to-18-years">Adolescent 13 to 18 Years</a></h4>
+                <p> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 style="font-size: 35px;"> Communities </h2>
+          <p>Select your group and get started.</p>
+        </div>
+    <div class="box-container">
+	<div class="box-item">
+    <div class="flip-box">
+      <div class="flip-box-front text-center" style="background-image:linear-gradient(to top right,rgba(155, 90, 90, 0.2),rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1515052945961-bbb80118b74b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header"> Teenage</h3>
+          
+          
+        </div>
+      </div>
+      <div class="flip-box-back text-center" style="background-image:linear-gradient(to top right,rgba(155, 90, 90, 0.2),rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1515052945961-bbb80118b74b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80');">
+        <div class="inner color-white">
+          
+          <p>At a tender age like this, every little issue seems big. Especially when you don't have anyone to go to. </p>
+          <button class="flip-box-button"> <a href="{{ url_for('teenage') }}"> Learn More</a></button>
+        </div>
+      </div>
+    </div>
+	</div>
+	<div class="box-item">
+    <div class="flip-box">
+      <div class="flip-box-front text-center" style="background-image:linear-gradient(to top right,rgba(155, 90, 90, 0.2),rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1561287495-a3fe1fd28504?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=582&q=80');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">Married</h3>
+        
+         
+        </div>
+      </div>
+      <div class="flip-box-back text-center" style="background-image:linear-gradient(to top right,rgba(155, 90, 90, 0.2),rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1561287495-a3fe1fd28504?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=582&q=80');">
+        <div class="inner color-white">
+          
+          <p> Weddings are a huge step women take in every aspects of their life, including health.</p>
+          <button class="flip-box-button">
+            <a href="{{ url_for('married') }}">Learn More</a> </button>
+          
+        </div>
+      </div>
+    </div>
+	</div>
+	<div class="box-item">
+    <div class="flip-box">
+      <div class="flip-box-front text-center filter-" style="background-image:linear-gradient(to top right,rgba(155, 90, 90, 0.2),rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1591466135822-725baf5bc63f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">Infertility</h3>
+          
+         
+        </div>
+      </div>
+      <div class="flip-box-back text-center" style="background-image: linear-gradient(to top right,rgba(155, 90, 90, 0.2),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1591466135822-725baf5bc63f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80');">
+        <div class="inner color-white">
+          <p>Having a complete family is a dream of every woman. Even if it seems tough right now, join the likes of you and trust the process.</p>
+          <button class="flip-box-button"><a href="{{ url_for('infertility') }}">Learn More</a> </button>
+        </div>
+      </div>
+    </div>
+	</div>
+</div>
+<div class="box-container">
+	<div class="box-item">
+    <div class="flip-box">
+      <div class="flip-box-front text-center" style="background-image:linear-gradient(to top right,rgba(155, 90, 90, 0.2),rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1576105629072-943bbe9d5c1d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">Pregnant</h3>
+         
+        
+        </div>
+      </div>
+      <div class="flip-box-back text-center" style="background-image: linear-gradient(to top right,rgba(155, 90, 90, 0.2),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1576105629072-943bbe9d5c1d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80');">
+        <div class="inner color-white">
+          <p>You're about to give birth and be born again as a mother at the exact same moment!</p>
+          <button class="flip-box-button"><a href="{{ url_for('pregnant') }}">Learn More</a> </button>
+        </div>
+      </div>
+    </div>
+	</div>
+	<div class="box-item">
+    <div class="flip-box">
+      <div class="flip-box-front text-center" style="background-image: linear-gradient(to top right,rgba(155, 90, 90, 0.2),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1582045559104-e176d91c6dbf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">New Moms</h3>
+         
+         
+        </div>
+      </div>
+      <div class="flip-box-back text-center" style="background-image: linear-gradient(to top right,rgba(155, 90, 90, 0.2),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1582045559104-e176d91c6dbf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');">
+        <div class="inner color-white">
+          <p> When everyone around you is asking "How is the baby doing?",we will be asking "What's up with you?". </p>
+          <button class="flip-box-button"><a href="{{ url_for('new_moms') }}">Learn More</a> </button>
+        </div>
+      </div>
+    </div>
+	</div>
+	<div class="box-item">
+    <div class="flip-box">
+      <div class="flip-box-front text-center filter-" style="background-image:linear-gradient(to top right,rgba(155, 90, 90, 0.2),rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1586249806318-cefbe6b9ff41?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');">
+        <div class="inner color-white">
+          <h3 class="flip-box-header">MenoPause</h3>
+         
+        
+        </div>
+      </div>
+      <div class="flip-box-back text-center" style="background-image: linear-gradient(to top right,rgba(155, 90, 90, 0.2),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1586249806318-cefbe6b9ff41?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');">
+        <div class="inner color-white">
+         
+          <p>Aah. The periods are ending, but are they as easy and relaxing as it sounds? Find out here.</p>
+          <button class="flip-box-button"><a href="{{ url_for('menopause') }}">Learn More</a> </button>
+        </div>
+      </div>
+    </div>
+	</div>
+</div>
+</div>
+</section>
+    <section id="services" class="services ">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title" id="disorder">
+          <h2 style="font-size: 35px;">Disorders</h2>
+          <p>.....</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="http://localhost:8000/">Skin Cancer</a></h4>
+            
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="http://localhost:8000/">Breast Cancer </a></h4>
+              
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="http://localhost:8000/">Cervical Cancer</a></h4>
+           <p></p>
+            </div>
+          </div>
+
+          
+         
+          
+
+
+        </div>
+
+      </div>
+    </section>
+   
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 style="font-size: 30px;">F.A.Q</h2>
+          <p>Frequently Asked Questions</p>
+        </div>
+
+        <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1" style="font-size: 25px;">      I have unbearable period cramps every month. Does that mean I have PCOD? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p style="font-size: 22px;">Some women with PCOS have irregular periods, which may be infrequent and/or prolonged. When women with PCOS have a menstrual period, they often experience heavy bleeding, clots, and severe period pain. </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question" style="font-size: 25px;"> Is obesity a major risk factor for PCOD?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p style="font-size: 22px;">
+                It is clear that women affected by obesity have a greater risk for PCOS and women with PCOS have a greater risk for obesity. Obesity is very common clinical feature in women affected by PCOS.</p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question" style="font-size: 25px;">I am having immense hairfall during my pregnancy. Is it normal? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p style="font-size: 22px;">
+                The first trimester can be a stressful time for the body, as hormones change to accommodate the developing baby. This stress, in turn, can cause upwards of 30 percent more hair on your head to move into the resting phase. This means you could see more hair than usual falling out</p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question" style="font-size: 25px;">Is breast cancer treatable?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p style="font-size:22px;">
+                Fortunately, breast cancer is very treatable if you spot it early. Localized cancer (meaning it hasn't spread outside your breast) can usually be treated before it spreads.</p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question" style="font-size: 25px;">I was completely cured from cervical cancer two months ago. Can I still conceive? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p style="font-size: 22px;">
+                Unfortunately, after most treatment for cervical cancer, you won't be able to get pregnant. This is because you may have: surgery to remove your womb (a radical hysterectomy) radiotherapy as part of your treatment that affects the womb and may stop your ovaries working.</p>
+            </div>
+          </li>
+
+          
+
+        </ul>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2 style="font-size: 35px;">Team</h2>
+          <p>Our team is always here to help</p>
+       
+        <!-- <button type="button" class="btn btn-primary"></button> -->
+      </div>
+        <div class="row">
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="static/assets/img/team/team-1.jpeg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Shruti Mishra</h4>
+                  <span>ML Developer/Backend Developer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="member">
+              <img src="static/assets/img/team/team-2.jpeg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Shambhavi Chaudhary</h4>
+                  <span>DL Developer</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="member">
+              <img src="static/assets/img/team/team-3.jpeg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Rashi Agarwal</h4>
+                  <span>Front-end Developer</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="member">
+              <img src="static/assets/img/team/team-4.jpeg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Vridhi Lalwani</h4>
+                  <span>Backend Developer</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 style="font-size: 35px;">Clients</h2>
+          <p>They trusted us</p>
+        </div>
+
+        <div class="clients-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="static/assets/img/clients/one.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="static/assets/img/clients/two.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="static/assets/img/clients/three.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="static/assets/img/clients/four.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="static/assets/img/clients/five.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="static/assets/img/clients/six.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="static/assets/img/clients/seven.png" class="img-fluid" alt=""></div>
+            <!-- <div class="swiper-slide"><img src="static/assets/img/clients/cpng" class="img-fluid" alt=""></div> -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 style="font-size: 35px;">Contact Us</h2>
+          <p>Contact us the get started</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" style="font-size: 25px;">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt" ></i>
+                <h4>Location:</h4>
+                <p>Kattankulathur , Chennai-603203</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>samy.53.ab@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>6392007344</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3 style="font-size: 35px;">Nazakat</h3>
+            <p style="font-size: 25px;">
+              Kattankulathur<br>
+              Chennai-603203 <br><br>
+              <strong>Phone:</strong> 6392007344<br>
+              <strong>Email:</strong> samy.53.ab@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 style="font-size: 30px;">Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="font-size: 25px;">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="font-size: 25px;">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="font-size: 25px;">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="font-size: 25px;">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="font-size: 25px;">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 style="font-size: 30px;">Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="font-size: 25px;">Breast Cancer Prediction and Detection</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="font-size: 25px;">Cervical Cancer Detection</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="font-size: 25px;">Chatroom</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="font-size: 25px;">ChatBot</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" style="font-size: 25px;">Information pages for women of all ages</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 style="font-size: 30px;">Our Social Networks</h4>
+            <p style="font-size: 25px;">Our social networks' handles are given as follows</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright" style="font-size: 25px;">
+        &copy; Copyright <strong><span>Nazakat</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits" style="font-size: 25px;">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/ -->
+        Designed by <a style="font-size: 25px;">Team La Femme</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+  <script src="static/assets/css/basic.js"></script>
+  <script src="static/assets/css/basic2.js"></script>
+
+  <script>
+    // optional
+        $('#customerhnyCarousel').carousel({
+            interval: 3000
+        });
+      </script>
+      <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "b49f6ed4-92b0-4d85-bfda-778b82d5d8d2", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "a4be6c81-9430-4574-92f9-2a192eeb56a9", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+          document.head.appendChild(t);
+        });
+      </script>
+
+<div style="margin-left: 150px;"class="alan-btn"></div>
+<script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+
+
+
+
+
+
+
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "5781a62e1657df072c59ae183d3c46982e956eca572e1d8b807a3e2338fdd0dc/stage",
+    
+
+    onCommand: function (commandData){
+    if (commandData.command === "marry"){
+      window.location.href="{{ url_for('married') }}";
+   
+    }
+
+    
+    if (commandData.command === "teenage"){
+      window.location.href="{{ url_for('teenage') }}";
+    }
+
+    
+    if (commandData.command === "infertile"){
+      window.location.href="{{ url_for('infertility') }}";
+    pageRedirectInfertility()
+    }
+
+   
+    if (commandData.command === "new-moms"){
+      window.location.href="{{ url_for('new_moms') }}";
+    pageRedirectNewMoms()
+    }},
+
+
+
+    
+     
+ 
+    
+    rootEl: document.getElementById("alan-btn"),
+    
+  });
+  </script>
+
+      </body>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+
+      
+ 
+  
+</html>

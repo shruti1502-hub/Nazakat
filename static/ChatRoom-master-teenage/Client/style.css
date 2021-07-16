@@ -1,0 +1,30 @@
+html {
+    font-size: 18px;
+    font-family: 'Cookie', cursive;
+    font-weight:400;
+  }
+  body{
+    font-family: 'Cookie', cursive;
+    /* background-color: aqua; */
+    background: url('https://images.unsplash.com/photo-1502323777036-f29e3972d82f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80') no-repeat;
+    
+    background-position: center;
+    background-size: cover;
+    
+}
+.one-page{
+    margin-top:400px;
+    /* padding-bottom: 500px; */
+}
+.panel-primary>.panel-heading,.color-btn 
+{
+    background-color: #CB4E47;
+    color:#fff;
+}
+
+.well
+{background-color: transparent; 
+  opacity: 0.9;
+    margin-top:100px;
+    border: transparent;
+}
