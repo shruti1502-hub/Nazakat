@@ -54,8 +54,8 @@ As we all know, even in today’s technology-driven world, women are uncomfortab
 <img width=40% src="screenshots/shebot2.jpeg"> &ensp;  
 
 
-##Alan API 
+## Alan API 
 <img width=40% src="screenshots/alan.jpeg"> &ensp;  
 
- ##Cancer Diagnosis
+ ## Cancer Diagnosis
 <img width=40% src="screenshots/cancerdiagnosis.jpeg"> &ensp;  
