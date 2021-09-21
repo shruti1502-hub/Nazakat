@@ -61,3 +61,10 @@ As we all know, even in today’s technology-driven world, women are uncomfortab
 <img width=40% src="screenshots/cancerdiagnosis.jpeg"> &ensp;  
  
 PPT- https://drive.google.com/file/d/1zu5j2umCujyg-_0dtEUZETZxKPNnsERE/view?usp=sharing
+ 
+## How to Run
+
+run:
+python main.py
+ 
+Click on the server link. 
